@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mj.gamelanyoka.MainActivity">
+
+
+    <!--<LinearLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/command_buttons"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="64dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentBottom="true">-->
+
+        <!--<TextView-->
+            <!--style="@style/DirectionButton"-->
+            <!--android:layout_weight="1"/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/direction_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            style="@style/DirectionButton"
+            android:layout_weight="0.08"/>
+
+        <TextView
+            style="@style/DirectionButton"
+            android:layout_weight="0.16"/>
+
+        <TextView
+            style="@style/DirectionButton"
+            android:layout_weight="0.19"/>
+
+        <TextView
+            style="@style/DirectionButton"
+            android:layout_weight="0.19"/>
+
+        <TextView
+            style="@style/DirectionButton"
+            android:layout_weight="0.19"/>
+
+        <TextView
+            style="@style/DirectionButton"
+            android:layout_weight="0.19"/>
+
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/direction_buttons"/>
+
+
+</RelativeLayout>
